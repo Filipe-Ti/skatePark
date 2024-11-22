@@ -1,15 +1,34 @@
 {
-  "name": "skatepark",
+  "name": "pruebaskatepark",
   "version": "1.0.0",
-  "description": "",
+  "description": "API REST",
   "main": "index.js",
+  "type": "module",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Filipe-Ti/skatePark.git"
+  },
+  "keywords": [
+    "API",
+    "REST",
+    "ORM",
+    "Sequelize",
+    "CRUD"
+  ],
+  "author": "ProtecDev, Academia Latam",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Filipe-Ti/skatePark/issues"
+  },
+  "homepage": "https://github.com/Filipe-Ti/skatePark#readme",
   "dependencies": {
-    "express": "^4.21.1"
+    "express": "^4.21.1",
+    "pg": "^8.13.1",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.5"
   }
 }
