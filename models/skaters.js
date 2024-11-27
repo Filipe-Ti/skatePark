@@ -1,5 +1,5 @@
-import { DataTypes, STRING } from "sequelize";
-import sequelize from "../connection/connection.js";
+const { DataTypes } = require("sequelize");
+const sequelize = require("../connection/connection");
 
 const Skater = sequelize.define('Skater', {
     id: {
@@ -41,4 +41,4 @@ const Skater = sequelize.define('Skater', {
     underscored: true
 });
 
-export default Skater;
+module.exports = Skater;
